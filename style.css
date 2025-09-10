@@ -1,0 +1,68 @@
+/* Overall chatbot container positioning */
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+/* Chat window design */
+#chat-window {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+/* Header styling */
+#chat-header {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Body area for messages */
+#chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Individual message styles */
+.message {
+  margin-bottom: 8px;
+}
+.message.bot {
+  color: #007BFF;
+}
+.message.user {
+  text-align: right;
+  color: #333;
+}
+
+/* Footer input area */
+#chat-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+#user-input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#send-button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  background: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
